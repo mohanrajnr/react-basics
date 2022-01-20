@@ -1,0 +1,2 @@
+1) https://codeburst.io/imperative-vs-declarative-javascript-8b5e45a602dd
+2) https://reactjs.org/docs/composition-vs-inheritance.html
