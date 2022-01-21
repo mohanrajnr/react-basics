@@ -1,2 +1,8 @@
 1) https://codeburst.io/imperative-vs-declarative-javascript-8b5e45a602dd
 2) https://reactjs.org/docs/composition-vs-inheritance.html
+3) what is event bubbling
+4) event bubbling vs
+5) Each child in a list should have a unique "key" prop.
+6) React hooks
+7) https://stackoverflow.com/questions/28329382/understanding-unique-keys-for-array-children-in-react-js
+8) 
