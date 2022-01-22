@@ -11,3 +11,4 @@ https://www.smashingmagazine.com/2020/05/styling-components-react/#:~:text=A%20C
 https://dev.to/alexsergey/css-modules-vs-css-in-js-who-wins-3n25
 10) JSX Limitations and fragments
 11) Refs
+12) redux vs mobx vs usestate https://medium.com/@dbottiau/a-state-management-comparison-with-react-hooks-mobx-and-recoiljs-3b7e2f4cc6c3
