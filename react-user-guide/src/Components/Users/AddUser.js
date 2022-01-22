@@ -2,6 +2,7 @@ import Button from "../UI/Button";
 import Card from "../UI/Card";
 import classes from "./AddUser.module.css";
 import { useState } from "react";
+import idGenerator from "../../Utils/NewIDGenerator";
 
 const AddUser = (props) => {
   const [enteredUsername, setUsername] = useState("");
@@ -22,6 +23,7 @@ const AddUser = (props) => {
     props.onAddUser({
       username: enteredUsername,
       age: enteredAge,
+      id: idGenerator(),
     });
     clearInput();
   };
