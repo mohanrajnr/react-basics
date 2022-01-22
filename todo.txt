@@ -9,3 +9,5 @@
 9) CSS Modules vs CSS-in-JS(styled components). Who wins?
 https://www.smashingmagazine.com/2020/05/styling-components-react/#:~:text=A%20CSS%20Module%20is%20a,are%20scoped%20locally%20by%20default.&text=styled%2Dcomponents%20is%20a%20library,called%20CSS%2Din%2DJS.
 https://dev.to/alexsergey/css-modules-vs-css-in-js-who-wins-3n25
+10) JSX Limitations and fragments
+11) Refs

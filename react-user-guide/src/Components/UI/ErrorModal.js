@@ -15,7 +15,7 @@ const ErrorModal = (props) => {
         <div className={classes.content}>
           <p>{props.message}</p>
         </div>
-        <footer className={classes.action}>
+        <footer className={classes.actions}>
           <Button onClick={btnClick}>Okay</Button>
         </footer>
       </Card>

@@ -4,6 +4,7 @@ import classes from "./AddUser.module.css";
 import { useState } from "react";
 import idGenerator from "../../Utils/NewIDGenerator";
 import ErrorModal from "../UI/ErrorModal";
+import Wrapper from "../Helpers/Wrapper";
 
 const AddUser = (props) => {
   const [enteredUsername, setUsername] = useState("");
@@ -44,12 +45,49 @@ const AddUser = (props) => {
     setAge(event.target.value);
   };
   const clearError = () => {
-    debugger;
-    setError('');
-  }
+    setError("");
+  };
+  /*
+  //alternative using arrays
+  return [
+    error && (
+      <ErrorModal
+        onModalClick={clearError}
+        title={error.title}
+        message={error.message}
+      />
+    ),
+    <Card className={classes.input}>
+      <form onSubmit={addUserHandler}>
+        <label htmlFor="username">Username</label>
+        <input
+          id="username"
+          onChange={userChangeHandler}
+          value={enteredUsername}
+          type="text"
+        />
+
+        <label htmlFor="age">Age</label>
+        <input
+          onChange={ageChangeHandler}
+          id="age"
+          value={enteredAge}
+          type="number"
+        />
+        <Button type="submit">Add User</Button>
+      </form>
+    </Card>,
+  ];
+  */
   return (
-    <div>
-      {error && <ErrorModal onModalClick={clearError} title={error.title} message={error.message} />}
+    <Wrapper>
+      {error && (
+        <ErrorModal
+          onModalClick={clearError}
+          title={error.title}
+          message={error.message}
+        />
+      )}
       <Card className={classes.input}>
         <form onSubmit={addUserHandler}>
           <label htmlFor="username">Username</label>
@@ -70,7 +108,7 @@ const AddUser = (props) => {
           <Button type="submit">Add User</Button>
         </form>
       </Card>
-    </div>
+    </Wrapper>
   );
 };
 export default AddUser;
