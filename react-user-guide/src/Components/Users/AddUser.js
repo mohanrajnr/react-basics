@@ -83,7 +83,7 @@ const AddUser = (props) => {
     <Wrapper>
       {error && (
         <ErrorModal
-          onModalClick={clearError}
+          onConfirm={clearError}
           title={error.title}
           message={error.message}
         />
