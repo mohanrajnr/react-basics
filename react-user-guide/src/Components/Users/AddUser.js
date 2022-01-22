@@ -19,6 +19,10 @@ const AddUser = (props) => {
       return;
     }
     console.log(enteredUsername, enteredAge);
+    props.onAddUser({
+      username: enteredUsername,
+      age: enteredAge,
+    });
     clearInput();
   };
   const userChangeHandler = (event) => {

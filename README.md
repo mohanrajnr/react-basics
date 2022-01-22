@@ -8,6 +8,7 @@ git pull origin master<br />
 git checkout -b new_develop_branch<br />
 git pull origin new_develop_branch<br />
 git push origin new_develop_branch<br />
+git branch --set-upstream-to=origin/new_develop_branch new_develop_branch<br/>
 
 ## merge the develop branch with master
 git checkout master<br />
